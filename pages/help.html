@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About this Web Mapping Application</title>
+<style type="text/css">
+.useful_linksa {
+  text-decoration: none;
+  width:100%; 
+  line-height:25px;
+  display:block; 
+  padding-left:3px; 
+  background-repeat:repeat-x; 
+
+}
+.document p {
+padding: 8px; 
+}
+.document{
+padding: 5px; 
+}
+.useful_linksa:hover {
+background-color:#CBC9BD;
+
+}
+.useful_linksli {
+  width: 100%;
+  height: 25px;
+  list-style: none;
+ /* border: 1px solid #C4C4C4; */
+}
+
+.default_ul{
+  margin-left: 15px;  
+}
+</style>
+
+</head>
+
+<body>
+<div class="document">
+
+ <p style="margin: 5px;">
+            The CREST stream flow viewer and flood simulator has the capability to generate a flood map from gauged values for basins that do not have CREST and from CREST outputs. To simulate flood using the gauged values for any basin, here are the steps to follow:
+            <ol>
+                <li>On the left hand side menu, select the country</li>
+                <li>Select the basin by name</li>
+                <li>Select the simulation source to be gauge value</li>
+                <li>Check the icon for manual input</li>
+                <li>On the space provided, enter the gauge value( these values refers to the water levels recorded everyday by water agencies)</li>
+                <li>Click on simulate floods</li>
+            </ol>
+            The last step will take a while, and once done an option of downloading the map will appear</p>
+            <p style="margin: 5px;">
+                To simulate floods using CREST values (these only apply for Nzoia and Malaba basins so far), follow the below steps:
+                <ol>
+                    <li>Step 1 and 2 above </li>
+                    <li>Select the simulation source as CREST values-</li>
+                    <li>A chart range time query option will appear- use it to query the time period from start date to end date</li>
+                    <li>Click on update graph- A graph showing the values of discharges and stage versus time will appear on the top section</li>
+                    <li>To simulate a flood map, click on the line representing the stage value for a specific date. The applications will automatic update the flood determination based on the threshold. </li>
+                    <li>If the stage surpasses the threshold, click on simulate flood </li>
+                </ol>
+                Then once done you can download the map
+                The application also comes with an option to download time series data CREST output in csv format for Nzoia, Malaba and Nyando basins 
+                The flood maps generated comes in geo-tiff format which can be read in any GIS environment
+            </p>
+
+</div>
+</body>
+</html>
